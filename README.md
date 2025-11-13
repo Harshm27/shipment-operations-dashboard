@@ -109,17 +109,20 @@ Your Excel file should contain these columns:
 
 | Column | Required | Description |
 |--------|----------|-------------|
-| Collection Name | Yes | Sender name |
-| Collection Address | Yes | Pickup address |
-| Collection Postcode | Yes | Pickup postal code |
-| Collection Country | Yes | Two-letter country code (e.g., GB, US) |
-| Delivery Name | Yes | Recipient name |
-| Delivery Address | Yes | Delivery address |
-| Delivery Postcode | Yes | Delivery postal code |
-| Delivery Country | Yes | Two-letter country code |
-| Weight (kg) | Yes | Package weight |
+| Unique identifier | Yes | Shipment ID (e.g., SHIP001) |
+| Collection Date | Yes | Pickup date (YYYY-MM-DD) |
+| Collection Area Name | Yes | Pickup postcode/area |
+| Delivery Area Name | Yes | Delivery postcode/area |
+| Origin Country | Yes | Pickup country (full name, e.g., United Kingdom) |
+| Destination Country | Yes | Delivery country (full name) |
+| Transport Mode | Yes | Road, Air, or Sea |
+| Shipper | Yes | Carrier name (e.g., DPD, FedEx) |
+| Emission type by shipper mode | Yes | Van, Truck, Air Freight, etc. |
+| Emission factor of emission type | Yes | CO2 factor (numeric) |
+| Weight | Yes | Package weight in kg |
+| Cost of shipment | Yes | Shipping cost |
 
-[Download Sample Excel Template](./docs/sample-template.xlsx)
+**📥 [Download Sample Excel File](./Sample_Shipment_Data.xlsx)** - Contains 15 realistic shipment examples
 
 ## 🚀 Deployment
 
