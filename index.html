@@ -3579,7 +3579,7 @@
                 console.log('Fetching rates via backend proxy:', data);
                 
                 // Your backend URL
-                const BACKEND_URL = 'http://localhost:3001';
+                const BACKEND_URL = 'https://shipment-dashboard-api.onrender.com';
                 
                 // Prepare request payload
                 const payload = {
@@ -3678,7 +3678,7 @@
         // Check backend connection when page loads
         async function checkBackendConnection() {
             try {
-                const BACKEND_URL = 'http://localhost:3001';
+                const BACKEND_URL = 'https://shipment-dashboard-api.onrender.com';
                 const response = await fetch(`${BACKEND_URL}/api/health`);
                 const data = await response.json();
                 
